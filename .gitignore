@@ -1,0 +1,4 @@
+/build
+/dist
+device_catalog.json
+*.spec
