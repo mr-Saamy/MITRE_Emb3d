@@ -53,33 +53,91 @@ The tool computes an **Achieved Security Level (SL-A)** versus the operator-defi
 **79 threats** — complete coverage of the MITRE EMB3D™ registry, each with rail/transit-specific attack vectors:
 
 ### Hardware (16 threats)
-| TID | Threat |
-|---|---|
-| TID-101 | Power / EM Side-Channel Analysis |
-| TID-102 | Electromagnetic Analysis Side Channel |
-| TID-103 | Microarchitectural Side Channels (Spectre/Meltdown) |
-| TID-105 | Hardware Fault Injection – Control Flow |
-| TID-106 | Data Bus / DMA Interception |
-| TID-107 | Unauthorized Direct Memory Access (DMA) |
-| TID-108 | ROM / NVRAM Data Extraction |
-| TID-109 | RAM Chip Contents Readout (Cold-Boot) |
-| TID-110 | Hardware Fault Injection – Data Manipulation |
-| TID-111 | Untrusted External Storage Execution |
-| TID-113 | Unverified Peripheral Firmware |
-| TID-114 | Peripheral Data Bus Interception |
-| TID-115 | Firmware Extraction via HW Interface |
-| TID-116 | Latent Privileged Access Port |
-| TID-118 | Weak Port Electrical Damage Protection |
-| TID-119 | Latent Hardware Debug Port |
+- `TD-101` Power / EM Side-Channel Analysis 
+- `TD-102` Electromagnetic Analysis Side Channel 
+- `TD-103` Microarchitectural Side Channels (Spectre/Meltdown) 
+- `TD-105` Hardware Fault Injection – Control Flow 
+- `TD-106` Data Bus / DMA Interception 
+- `TD-107` Unauthorized Direct Memory Access (DMA) 
+- `TD-108` ROM / NVRAM Data Extraction 
+- `TD-109` RAM Chip Contents Readout (Cold-Boot) 
+- `TD-110` Hardware Fault Injection – Data Manipulation 
+- `TD-111` Untrusted External Storage Execution 
+- `TD-113` Unverified Peripheral Firmware 
+- `TD-114` Peripheral Data Bus Interception 
+- `TD-115` Firmware Extraction via HW Interface 
+- `TD-116` Latent Privileged Access Port 
+- `TD-118` Weak Port Electrical Damage Protection 
+- `TD-119` Latent Hardware Debug Port 
 
 ### System Software (25 threats)
-`TID-201` Bootloader Verification · `TID-202` Network Stack CVEs · `TID-203` Malicious Kernel Module · `TID-204` OS Privilege Escalation · `TID-205` Living-off-the-Land · `TID-206` Memory Protections Subverted · `TID-207` Container Escape · `TID-208` VM Escape · `TID-209` Host Manipulates Guest VMs · `TID-210` Unpatchable Device · `TID-211` Unauthenticated FW Install · `TID-212` FW Update Secret Extraction · `TID-213` Faulty FW Integrity · `TID-214` HW Root of Trust Extraction · `TID-215` Unencrypted FW Updates · `TID-216` FW Rollback · `TID-217` Remote Update DoS · `TID-218` OS Rootkit · `TID-219` Kernel Privilege Escalation · `TID-220` Unpatchable HW Root of Trust · `TID-221` Auth Bypass via Replay · `TID-222` Critical Service Disabled · `TID-223` RAM Scraping · `TID-224` Excessive Diagnostic Access · `TID-225` Log Manipulation · `TID-226` Log Info Leakage
+- `TID-201` Bootloader Verification -202` Network Stack CVEs 
+- `TID-203` Malicious Kernel Module 
+- `TID-204` OS Privilege Escalation 
+- `TID-205` Living-off-the-Land 
+- `TID-206` Memory Protections Subverted 
+- `TID-207` Container Escape 
+- `TID-208` VM Escape 
+- `TID-209` Host Manipulates Guest VMs 
+- `TID-210` Unpatchable Device 
+- `TID-211` Unauthenticated FW Install 
+- `TID-212` FW Update Secret Extraction 
+- `TID-213` Faulty FW Integrity 
+- `TID-214` HW Root of Trust Extraction 
+- `TID-215` Unencrypted FW Updates 
+- `TID-216` FW Rollback 
+- `TID-217` Remote Update DoS 
+- `TID-218` OS Rootkit 
+- `TID-219` Kernel Privilege Escalation 
+- `TID-220` Unpatchable HW Root of Trust 
+- `TID-221` Auth Bypass via Replay 
+- `TID-222` Critical Service Disabled 
+- `TID-223` RAM Scraping 
+- `TID-224` Excessive Diagnostic Access 
+- `TID-225` Log Manipulation 
+- `TID-226` Log Info Leakage
 
 ### Application Software (29 threats)
-`TID-301` Binary Modification · `TID-302` Untrusted App · `TID-303` Excessive Trust in Mgmt SW · `TID-304` Runtime Manipulation · `TID-305` Dangerous Syscalls · `TID-306` Sandbox Escape · `TID-307` Code Representations Inconsistent · `TID-308` Code Overwritten to Avoid Detection · `TID-309` Device Exploits Workstation · `TID-310` Unauthenticated Service · `TID-311` Default Credentials · `TID-312` Credential Change Abused · `TID-313` Unauthenticated Session Credential Change · `TID-314` Brute Force · `TID-315` Password Retrieval Abused · `TID-316` Cert Verification Bypass · `TID-317` Predictable Key · `TID-318` Insecure Crypto · `TID-319` XSS · `TID-320` SQL Injection · `TID-321` Session Hijacking · `TID-322` CSRF · `TID-323` Path Traversal · `TID-324` HTTP Direct Object Reference (IDOR) · `TID-326` Insecure Deserialization · `TID-327` Buffer Overflow · `TID-328` Hardcoded Credentials · `TID-329` Improper Password Storage · `TID-330` Crypto Timing Side-Channel
+- `TID-301` Binary Modification 
+- `TID-302` Untrusted App 
+- `TID-303` Excessive Trust in Mgmt SW 
+- `TID-304` Runtime Manipulation 
+- `TID-305` Dangerous Syscalls 
+- `TID-306` Sandbox Escape 
+- `TID-307` Code Representations Inconsistent 
+- `TID-308` Code Overwritten to Avoid Detection 
+- `TID-309` Device Exploits Workstation 
+- `TID-310` Unauthenticated Service 
+- `TID-311` Default Credentials 
+- `TID-312` Credential Change Abused 
+- `TID-313` Unauthenticated Session Credential Change 
+- `TID-314` Brute Force 
+- `TID-315` Password Retrieval Abused 
+- `TID-316` Cert Verification Bypass 
+- `TID-317` Predictable Key 
+- `TID-318` Insecure Crypto 
+- `TID-319` XSS 
+- `TID-320` SQL Injection 
+- `TID-321` Session Hijacking 
+- `TID-322` CSRF 
+- `TID-323` Path Traversal 
+- `TID-324` HTTP Direct Object Reference (IDOR) 
+- `TID-326` Insecure Deserialization 
+- `TID-327` Buffer Overflow 
+- `TID-328` Hardcoded Credentials 
+- `TID-329` Improper Password Storage 
+- `TID-330` Crypto Timing Side-Channel
 
 ### Networking (9 threats)
-`TID-401` Undocumented Protocol · `TID-404` Remote DoS · `TID-405` Resource Exhaustion · `TID-406` Spoofed Bus Messages · `TID-407` Message Replay · `TID-408` Unencrypted Transit · `TID-410` Crypto Protocol Side-Channel · `TID-411` Weak Crypto Protocol · `TID-412` Rogue AP / Wireless Abuse
+- `TID-401` Undocumented Protocol 
+- `TID-404` Remote DoS 
+- `TID-405` Resource Exhaustion 
+- `TID-406` Spoofed Bus Messages 
+- `TID-407` Message Replay 
+- `TID-408` Unencrypted Transit 
+- `TID-410` Crypto Protocol Side-Channel 
+- `TID-411` Weak Crypto Protocol 
+- `TID-412` Rogue AP / Wireless Abuse
 
 ---
 
