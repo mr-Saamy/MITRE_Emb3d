@@ -216,27 +216,27 @@ pyinstaller --onefile --windowed --name "EMB3D_TARA_Tool" emb3d_req.py
 ```
 ┌──────────────────────────────────────────────────────────┐
 │  Tab 1: System Mapper                                    │
-│  → Enter device name, type, OS, zone, SL-T, CRA life    │
+│  → Enter device name, type, OS, zone, SL-T, CRA life     │
 ├──────────────────────────────────────────────────────────┤
 │  Tab 2: Properties                                       │
-│  → Tick applicable EMB3D properties (32 checkboxes)     │
+│  → Tick applicable EMB3D properties (32 checkboxes)      │
 │  → Click ⚠ Generate TARA Analysis                       │
 ├──────────────────────────────────────────────────────────┤
 │  Tab 3: Threat Catalog                                   │
-│  → Review threats filtered by category / priority       │
+│  → Review threats filtered by category / priority        │
 │  → Colour-coded rows: 🔴 Critical · 🟧 High · 🟨 Medium │
 ├──────────────────────────────────────────────────────────┤
 │  Tab 4: Mitigations                                      │
-│  → Review technical requirements per threat             │
+│  → Review technical requirements per threat              │
 │  → Tick ✅ Implemented for each completed mitigation    │
 ├──────────────────────────────────────────────────────────┤
 │  Tab 5: SL Assessment                                    │
-│  → FR-level SL-T vs SL-A gap analysis                   │
-│  → Overall compliance verdict auto-updates              │
+│  → FR-level SL-T vs SL-A gap analysis                    │
+│  → Overall compliance verdict auto-updates               │
 ├──────────────────────────────────────────────────────────┤
 │  Tab 6: Device Catalog                                   │
-│  → Save device to catalog (persisted in JSON)           │
-│  → Load previous devices · Delete · Export              │
+│  → Save device to catalog (persisted in JSON)            │
+│  → Load previous devices · Delete · Export               │
 └──────────────────────────────────────────────────────────┘
 ```
 
