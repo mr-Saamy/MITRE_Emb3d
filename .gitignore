@@ -2,3 +2,6 @@
 /dist
 device_catalog.json
 *.spec
+/__pycache__
+/.agent
+*.csv

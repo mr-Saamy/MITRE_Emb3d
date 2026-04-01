@@ -5,9 +5,10 @@ This guide explains how to use the **Rail & Transit EMB3D Threat Analysis and Ri
 ## What Does This Tool Do?
 
 Think of this tool as a translator. You tell it **what your device is** and **how it is built** (e.g., "It's a trackside controller running Linux with a Wi-Fi connection"), and the tool translates that into:
-1. **The Threats:** What cyber attacks you need to worry about (based on MITRE EMB3D™).
+1. **The Threats:** What cyber attacks you need to worry about (based on **MITRE EMB3D™ 2.0.1** — 81 threats total).
 2. **The Requirements:** What you must do to fix them (based on IEC 62443 and the EU Cyber Resilience Act).
-3. **The Assessment:** How close you are to achieving your target Security Level (SL).
+3. **The TTPs:** Which **MITRE ATT&CK® for ICS v18** adversary techniques are relevant to each threat.
+4. **The Assessment:** How close you are to achieving your target Security Level (SL).
 
 ---
 
@@ -75,8 +76,11 @@ You will see a large table listing all the MITRE EMB3D threats that apply to *yo
 Now that you know the threats, how do you fix them? Go to the **🛡 Mitigations** tab.
 
 This tab shows the exact same list of threats, but instead of showing risk scores, it shows **Requirements**:
+*   **IEC 62443-4-2 FR:** The Fundamental Requirement and Component Requirement this threat addresses.
+*   **IEC 62443-4-1 SDL:** The Secure Development Lifecycle practice (SR 1–SR 7) that applies.
+*   **NIST SP 800-82 / EU CRA:** The specific control and Annex I article this fix satisfies.
+*   **ATT&CK for ICS:** The **MITRE ATT&CK® for ICS v18** technique ID(s) this threat maps to (e.g. `T0857, T0839`). Use these to link your TARA output to your threat intelligence or detection engineering work.
 *   **Technical Mitigation:** What you actually need to build or configure to stop the attack.
-*   **IEC 62443 / NIST / CRA:** The exact standard clauses this fix satisfies.
 
 **The most important part of this tab is the "Implemented" checklist at the bottom.**
 There is a horizontal scrolling panel named: `✅ Mark Mitigations as Implemented`.
@@ -126,8 +130,8 @@ We look at our WOC hardware and software and we tick these boxes:
 *   `NP-8` (Currently, it sends logs in cleartext without TLS)
 
 **Step 3 & 4: Analysis**
-We click `Generate TARA Analysis` and look at the Mitigations. 
-The tool spots that because it's trackside (`HP-5`) and has USB ports (`HP-1`), it's vulnerable to *TID-111 (Untrusted External Storage)* and tells us to disable USB mass storage in the Linux kernel via IEC 62443 FR 2.
+We click `Generate TARA Analysis` and look at the Mitigations tab.
+The tool spots that because it's trackside (`HP-5`) and has USB ports (`HP-1`), it's vulnerable to *TID-111 (Untrusted External Storage)* and tells us to disable USB mass storage in the Linux kernel via IEC 62443 FR 2. The ATT&CK column shows `T0847, T0895` — meaning the adversary technique is *Replication Through Removable Media* (T0847), helping your SOC team know what to watch for.
 
 **Step 5: Assessment**
 We go to the SL Assessment tab. Because our goal is SL 3, but we haven't implemented anything yet, the tool shows massive gaps across all 7 FR categories. 
